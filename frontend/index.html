@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+<!-- SEO Meta Tags -->
+<title>Best Digital Skills Academy in Pakistan | Nexus Skill Academy</title>
+<meta name="description" content="Pakistan's leading digital skills academy offering courses in Digital Marketing, Web Development, AI Automation, Graphic Design. Only PKR 999. Serving Sukkur, Shikarpur, Sindh & all Pakistan.">
+<meta name="keywords" content="best digital skills academy in pakistan, digital academy sindh, digital marketing course pakistan, web development course, AI automation course sukkur, graphic designing shikarpur, online courses sindh">
+<meta name="author" content="Nexus Skill Academy">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="geo.region" content="PK-SD">
+<meta name="geo.placename" content="Sukkur, Sindh">
+<meta name="geo.position" content="27.7058;68.8574">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Best Digital Skills Academy in Pakistan | Nexus Skill Academy">
+<meta property="og:description" content="Learn Digital Marketing, Web Development, AI Skills from Pakistan's top academy. Only PKR 999!">
+<meta property="og:image" content="Untitled_design_3_.png">
+<meta property="og:url" content="https://www.nexusskillacademy.com">
+<meta property="og:site_name" content="Nexus Skill Academy">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Best Digital Skills Academy in Pakistan">
+<meta name="twitter:description" content="Learn Digital Skills. Only PKR 999. Serving all Pakistan.">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Nexus Skill Academy",
+  "description": "Pakistan's leading digital skills academy offering professional courses in Digital Marketing, Web Development, AI Automation, and more",
+  "url": "https://www.nexusskillacademy.com",
+  "logo": "https://www.nexusskillacademy.com/Untitled_design_3_.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sukkur",
+    "addressRegion": "Sindh",
+    "addressCountry": "PK"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+92-344-2411264",
+    "contactType": "Customer Service",
+    "availableLanguage": ["English", "Urdu"]
+  },
+  "areaServed": ["Sukkur", "Shikarpur", "Larkana", "Hyderabad", "Karachi", "Sindh", "Pakistan"],
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "PKR",
+    "lowPrice": "999",
+    "highPrice": "1499"
+  }
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#1f6bff;
+  --secondary:#20d6c7;
+  --dark:#0b1020;
+  --text:#eaf0ff;
+  --muted:#a9b3d6;
+  --border:rgba(255,255,255,0.12);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+  overflow-x:hidden;
+}
+
+body{
+  font-family:Inter,sans-serif;
+  background:radial-gradient(1200px 600px at top left,#16205a 0%,transparent 60%),
+             radial-gradient(1000px 500px at bottom right,#0d5b5b 0%,transparent 55%),
+             var(--dark);
+  color:var(--text);
+  overflow-x:hidden;
+  width:100%;
+  max-width:100vw;
+}
+
+/* RESPONSIVE HEADER */
+header{
+  position:sticky;
+  top:0;
+  padding:1rem 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  backdrop-filter:blur(12px);
+  background:rgba(11,16,32,.95);
+  border-bottom:1px solid rgba(255,255,255,.05);
+  z-index:1000;
+  width:100%;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  font-weight:800;
+  font-size:1rem;
+}
+
+.logo img{
+  width:40px;
+  height:auto;
+}
+
+.logo span{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  white-space:nowrap;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+  gap:4px;
+}
+
+.menu-toggle span{
+  width:25px;
+  height:3px;
+  background:var(--text);
+  border-radius:2px;
+  transition:.3s;
+}
+
+nav{
+  display:flex;
+  gap:.8rem;
+  align-items:center;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--text);
+  padding:.6rem 1rem;
+  border-radius:10px;
+  font-weight:500;
+  transition:.3s;
+  white-space:nowrap;
+  font-size:.95rem;
+}
+
+nav a:hover{
+  background:rgba(255,255,255,.08);
+  color:var(--secondary);
+}
+
+nav a.active{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:#001;
+  font-weight:700;
+}
+
+/* HERO SECTION */
+.hero{
+  padding:4rem 5% 3rem;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  width:100%;
+}
+
+.hero::before{
+  content:'';
+  position:absolute;
+  top:-100px;
+  left:50%;
+  transform:translateX(-50%);
+  width:min(600px, 90vw);
+  height:600px;
+  background:radial-gradient(circle,rgba(31,107,255,.2),transparent 70%);
+  pointer-events:none;
+  z-index:0;
+}
+
+.hero-content{
+  position:relative;
+  z-index:1;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.hero h1{
+  font-size:clamp(1.8rem, 5vw, 3.5rem);
+  font-weight:900;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  margin-bottom:1rem;
+  line-height:1.2;
+}
+
+.hero .subtitle{
+  font-size:clamp(1rem, 3vw, 1.3rem);
+  color:var(--muted);
+  margin-bottom:2rem;
+  max-width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.6;
+}
+
+.hero-badges{
+  display:flex;
+  gap:1rem;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-bottom:2rem;
+}
+
+.badge{
+  padding:.6rem 1.2rem;
+  background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.05));
+  border:1px solid var(--border);
+  border-radius:25px;
+  font-size:.85rem;
+  font-weight:600;
+  color:var(--secondary);
+  white-space:nowrap;
+}
+
+.cta-buttons{
+  display:flex;
+  gap:1rem;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-bottom:3rem;
+}
+
+.btn{
+  display:inline-block;
+  padding:.9rem 2rem;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:#001;
+  border-radius:12px;
+  font-weight:700;
+  text-decoration:none;
+  transition:.3s;
+  font-size:1rem;
+  white-space:nowrap;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 40px rgba(31,107,255,.4);
+}
+
+.btn-outline{
+  background:transparent;
+  border:2px solid var(--secondary);
+  color:var(--secondary);
+}
+
+.btn-outline:hover{
+  background:rgba(32,214,199,.1);
+  transform:translateY(-3px);
+}
+
+/* STATS SECTION */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:1.5rem;
+  max-width:1000px;
+  margin:0 auto;
+  padding:0 5%;
+}
+
+.stat-card{
+  background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:1.5rem;
+  text-align:center;
+}
+
+.stat-number{
+  font-size:2.5rem;
+  font-weight:900;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  margin-bottom:.5rem;
+}
+
+.stat-label{
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+/* FEATURES SECTION */
+.section{
+  padding:4rem 5%;
+  width:100%;
+}
+
+.section-title{
+  text-align:center;
+  font-size:clamp(1.8rem, 4vw, 2.5rem);
+  font-weight:800;
+  margin-bottom:.5rem;
+}
+
+.section-title span{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.section-subtitle{
+  text-align:center;
+  color:var(--muted);
+  margin-bottom:3rem;
+  font-size:clamp(.95rem, 2vw, 1.1rem);
+}
+
+.features-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  gap:1.5rem;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.feature-card{
+  background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:2rem;
+  transition:.3s;
+}
+
+.feature-card:hover{
+  transform:translateY(-5px);
+  border-color:var(--secondary);
+  box-shadow:0 15px 40px rgba(32,214,199,.15);
+}
+
+.feature-icon{
+  font-size:2.5rem;
+  margin-bottom:1rem;
+}
+
+.feature-card h3{
+  font-size:1.2rem;
+  margin-bottom:.8rem;
+  color:var(--text);
+}
+
+.feature-card p{
+  color:var(--muted);
+  line-height:1.6;
+  font-size:.95rem;
+}
+
+/* COURSES GRID */
+.courses-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  gap:2rem;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.course-card{
+  background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.03));
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:2rem;
+  transition:.35s;
+  position:relative;
+}
+
+.course-card:hover{
+  transform:translateY(-10px);
+  border-color:var(--secondary);
+  box-shadow:0 20px 50px rgba(32,214,199,.25);
+}
+
+.course-badge{
+  position:absolute;
+  top:15px;
+  right:15px;
+  padding:.4rem .8rem;
+  border-radius:20px;
+  font-size:.75rem;
+  font-weight:700;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:#001;
+}
+
+.course-title{
+  font-size:1.3rem;
+  font-weight:700;
+  margin-bottom:.6rem;
+}
+
+.course-duration{
+  color:var(--secondary);
+  font-weight:600;
+  margin-bottom:1rem;
+  font-size:.95rem;
+}
+
+.course-desc{
+  color:var(--muted);
+  font-size:.95rem;
+  line-height:1.6;
+  margin-bottom:1.5rem;
+}
+
+.price-tag{
+  display:flex;
+  align-items:center;
+  gap:.8rem;
+  margin-bottom:1.5rem;
+}
+
+.current-price{
+  font-size:1.8rem;
+  font-weight:900;
+  color:var(--secondary);
+}
+
+.old-price{
+  font-size:1rem;
+  color:var(--muted);
+  text-decoration:line-through;
+}
+
+/* LOCATION SECTION */
+.locations{
+  background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.01));
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:3rem 2rem;
+  max-width:1000px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.location-tags{
+  display:flex;
+  gap:1rem;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:2rem;
+}
+
+.location-tag{
+  padding:.6rem 1.2rem;
+  background:rgba(32,214,199,.1);
+  border:1px solid var(--secondary);
+  border-radius:25px;
+  color:var(--secondary);
+  font-weight:600;
+  font-size:.9rem;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:2rem 5%;
+  border-top:1px solid rgba(255,255,255,.06);
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+footer a{
+  color:var(--secondary);
+  text-decoration:none;
+  margin:0 .5rem;
+}
+
+footer a:hover{
+  text-decoration:underline;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media(max-width:768px){
+  .menu-toggle{
+    display:flex;
+  }
+  
+  nav{
+    position:fixed;
+    top:70px;
+    left:-100%;
+    width:100%;
+    background:rgba(11,16,32,.98);
+    flex-direction:column;
+    padding:2rem;
+    gap:1rem;
+    transition:.3s;
+    border-bottom:1px solid var(--border);
+  }
+  
+  nav.active{
+    left:0;
+  }
+  
+  nav a{
+    width:100%;
+    text-align:center;
+  }
+  
+  .hero{
+    padding:3rem 5% 2rem;
+  }
+  
+  .section{
+    padding:3rem 5%;
+  }
+  
+  .stats{
+    grid-template-columns:repeat(2, 1fr);
+  }
+  
+  .features-grid,
+  .courses-grid{
+    grid-template-columns:1fr;
+  }
+  
+  .cta-buttons{
+    flex-direction:column;
+  }
+  
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+}
+
+@media(max-width:480px){
+  header{
+    padding:1rem 4%;
+  }
+  
+  .logo{
+    font-size:.9rem;
+  }
+  
+  .logo img{
+    width:35px;
+  }
+  
+  .stats{
+    grid-template-columns:1fr;
+  }
+  
+  .stat-number{
+    font-size:2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="Untitled_design_3_.png" alt="Nexus Skill Academy Logo">
+    <span>Nexus Skill Academy</span>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="mainNav">
+    <a href="index.html" class="active">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+    <a href="student/dashboard.html">Student Login</a>
+    <a href="admin/dashboard.html">Admin</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Pakistan's #1 Digital Skills Academy</h1>
+    <p class="subtitle">Master in-demand digital skills from Pakistan's leading academy. Serving students across Sindh - Sukkur, Shikarpur, Larkana, Hyderabad, Karachi and all Pakistan. Start your journey to financial freedom today!</p>
+    
+    <div class="hero-badges">
+      <span class="badge">🎓 Certified Training</span>
+      <span class="badge">💼 Job-Ready Skills</span>
+      <span class="badge">🇵🇰 Made for Pakistan</span>
+      <span class="badge">⚡ Only PKR 999</span>
+    </div>
+    
+    <div class="cta-buttons">
+      <a href="courses.html" class="btn">Browse All Courses</a>
+    </div>
+    
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-number">5000+</div>
+        <div class="stat-label">Students Enrolled</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">7</div>
+        <div class="stat-label">Professional Courses</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">95%</div>
+        <div class="stat-label">Success Rate</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">PKR 999</div>
+        <div class="stat-label">Course Fee Only</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">Why Choose <span>Nexus Skill Academy?</span></h2>
+  <p class="section-subtitle">Pakistan's most affordable and comprehensive digital skills training</p>
+  
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <h3>Industry-Relevant Skills</h3>
+      <p>Learn the exact skills that employers and clients in Pakistan and internationally are looking for in 2026.</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">💰</div>
+      <h3>Extremely Affordable</h3>
+      <p>Complete professional courses at only PKR 999 - the most competitive pricing in Pakistan's digital education sector.</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">🎓</div>
+      <h3>Certified Training</h3>
+      <p>Receive official completion certificates recognized across Pakistan to boost your resume and freelance profile.</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">👨‍🏫</div>
+      <h3>Expert Instructors</h3>
+      <p>Learn from industry professionals with real-world experience serving clients in Pakistan, UAE, and globally.</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">📱</div>
+      <h3>Flexible Learning</h3>
+      <p>Study at your own pace with lifetime access to course materials - perfect for students in Sukkur, Shikarpur, and across Sindh.</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">💼</div>
+      <h3>Career Support</h3>
+      <p>Get job placement assistance, freelancing guidance, and portfolio building support to launch your digital career.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <h2 class="section-title">Most Popular <span>Courses</span></h2>
+  <p class="section-subtitle">Start your digital career with Pakistan's best courses</p>
+  
+  <div class="courses-grid">
+    <div class="course-card">
+      <span class="course-badge">🔥 Trending</span>
+      <div class="course-title">Digital Marketing</div>
+      <div class="course-duration">⏱ 3 Months Program</div>
+      <div class="course-desc">Master SEO, Meta Ads, Google Ads, and client acquisition. Perfect for students in Sindh looking to earn online.</div>
+      <div class="price-tag">
+        <span class="current-price">PKR 999</span>
+        <span class="old-price">PKR 14,999</span>
+      </div>
+      <a href="digital-marketing.html" class="btn" style="width:100%;text-align:center">Enroll Now</a>
+    </div>
+    
+    <div class="course-card">
+      <span class="course-badge">💻 Most Sold</span>
+      <div class="course-title">Website Development</div>
+      <div class="course-duration">⏱ 6 Months Program</div>
+      <div class="course-desc">Learn full-stack web development with React, Node.js, and MongoDB. High-paying skill in Pakistan.</div>
+      <div class="price-tag">
+        <span class="current-price">PKR 999</span>
+        <span class="old-price">PKR 19,999</span>
+      </div>
+      <a href="web-development.html" class="btn" style="width:100%;text-align:center">Enroll Now</a>
+    </div>
+    
+    <div class="course-card">
+      <span class="course-badge">🤖 Future Skill</span>
+      <div class="course-title">AI Automation & Chatbots</div>
+      <div class="course-duration">⏱ 3 Months Program</div>
+      <div class="course-desc">Build AI-powered systems that businesses pay premium rates for. Huge demand in Pakistan's market.</div>
+      <div class="price-tag">
+        <span class="current-price">PKR 999</span>
+        <span class="old-price">PKR 12,999</span>
+      </div>
+      <a href="ai-automation-chatbots.html" class="btn" style="width:100%;text-align:center">Enroll Now</a>
+    </div>
+  </div>
+  
+  <div style="text-align:center;margin-top:2rem">
+    <a href="courses.html" class="btn btn-outline">View All 7 Courses →</a>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="locations">
+    <h2 class="section-title">Serving <span>All Pakistan</span></h2>
+    <p class="section-subtitle">Learn from anywhere in Pakistan - Online classes available for everyone</p>
+    
+    <div class="location-tags">
+      <span class="location-tag">📍 Sukkur</span>
+      <span class="location-tag">📍 Shikarpur</span>
+      <span class="location-tag">📍 Larkana</span>
+      <span class="location-tag">📍 Hyderabad</span>
+      <span class="location-tag">📍 Karachi</span>
+      <span class="location-tag">📍 All Sindh</span>
+      <span class="location-tag">📍 Punjab</span>
+      <span class="location-tag">📍 KPK</span>
+      <span class="location-tag">📍 Balochistan</span>
+    </div>
+    
+    <div style="margin-top:2rem">
+      <a href="https://wa.me/923442411264" target="_blank" class="btn">WhatsApp: +92 344 2411264</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026–2027 Nexus Skill Academy. Pakistan's Leading Digital Skills Academy.</p>
+  <p>
+    <a href="privacy-policy.html">Privacy Policy</a> | 
+    <a href="terms.html">Terms of Service</a>
+  </p>
+  <p style="margin-top:1rem;color:var(--muted);font-size:.85rem">
+    Serving: Sukkur | Shikarpur | Larkana | Hyderabad | Karachi | All Pakistan
+  </p>
+</footer>
+
+<script>
+function toggleMenu(){
+  const nav = document.getElementById('mainNav');
+  nav.classList.toggle('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event){
+  const nav = document.getElementById('mainNav');
+  const toggle = document.querySelector('.menu-toggle');
+  
+  if(!nav.contains(event.target) && !toggle.contains(event.target)){
+    nav.classList.remove('active');
+  }
+});
+</script>
+
+<a href="https://wa.me/923442411264?text=Hi%20can%20I%20get%20guidance%20or%20can%20I%20know%20about%20Nexus%20Skill%20Academy" 
+class="whatsapp-float" 
+target="_blank">
+💬 Chat on WhatsApp
+</a>
+
+<style>
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:12px 18px;
+border-radius:50px;
+font-size:14px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+z-index:999;
+}
+</style>
+
+</body>
+</html>
